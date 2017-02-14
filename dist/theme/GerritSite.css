@@ -146,7 +146,7 @@ div.gerrit-state-minus-two:before {
   content: '\f165';
 }
 #gerrit_topmenu {
-  background: url('gerrit-iisg.png') no-repeat #f5f5f5;
+  background: url('https://gitcdn.xyz/cdn/fracz/OctoGerrit/iisg/dist/gerrit-iisg.png') no-repeat #f5f5f5 10px center;
   border-bottom: 1px solid #e5e5e5;
   padding: 10px 0 10px 120px;
 }
@@ -198,6 +198,7 @@ div.searchPanel input.searchTextBox {
   margin-left: 846px;
   position: absolute;
   top: -2px;
+  padding-left: 0;
 }
 .topmenuMenuLeft tbody tr td table.gwt-TabBar {
   border: 0 !important;
@@ -206,9 +207,6 @@ div.searchPanel input.searchTextBox {
 .topmenuMenuLeft .gwt-TabBarItem-wrapper {
   height: 2px;
   vertical-align: top !important;
-}
-.topmenuMenuLeft .gwt-TabBarFirst-wrapper {
-  width: 100%;
 }
 .topmenuMenuLeft .gwt-TabBarRest-wrapper > div {
   width: 144px;
@@ -333,7 +331,7 @@ table.changeTable {
 table.changeTable .activeRow,
 table.changeTable.accountDashboard .activeRow,
 table.changeTable.accountDashboard.changeTable .activeRow a {
-  background: #e8f0f8 !important;
+  background: #ebf8e8 !important;
 }
 table.changeTable td.cSIZE {
   width: 46px;
@@ -347,23 +345,13 @@ table.changeTable td:last-child {
   border-right: 1px solid #e5e5e5 !important;
 }
 table.changeTable tbody tr:first-child td {
-  background: #f8f8f8 !important;
   border: 0;
-  border-bottom: 1px solid #e5e5e5 !important;
-  border-top: 1px solid #e5e5e5 !important;
-  color: #ccc;
-  padding: 12px 0;
-  text-shadow: 1px 1px #fff;
+  padding: 6px 0;
 }
 table.changeTable tbody tr:first-child td:last-child {
   border-radius: 0 3px 0 0;
   border-right: 1px solid #e5e5e5 !important;
   padding-right: 10px;
-}
-table.changeTable tbody tr:first-child td.dataHeader:nth-child(5) {
-  overflow: hidden;
-  text-indent: -1000px;
-  width: 20px;
 }
 table.changeTable tbody tr:first-child td.dataHeader:nth-child(4) {
   overflow: hidden;
@@ -457,39 +445,6 @@ td.cAPPROVAL:nth-child(12) div.gerrit-state-minus-two:before {
 }
 td.cAPPROVAL:nth-child(12) div.gerrit-state-plus-two:before {
   content: '\f126';
-}
-td.cSTATUS {
-  max-width: 0px !important;
-  overflow: hidden;
-  position: relative;
-  text-align: right;
-  text-indent: 100px;
-  text-overflow: clip;
-  width: 15px !important;
-}
-td.cSTATUS:after {
-  background: #6cc644;
-  border-radius: 3px;
-  color: #fff;
-  content: '\f126';
-  font-family: 'FontAwesome';
-  font-size: 16px;
-  height: 16px;
-  padding: 2px;
-  position: absolute;
-  right: 2px;
-  text-indent: -100px;
-  top: 2px;
-  width: 16px;
-}
-td.cSTATUS.gerrit-status-abandoned:after {
-  background: #fc6d26;
-}
-td.cSTATUS.gerrit-status-conflict:after {
-  background: #bd2c00;
-}
-td.cSTATUS.gerrit-status-merged:after {
-  background: #6e5494;
 }
 div.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-statusRight {
   display: inline-block;
@@ -692,7 +647,7 @@ a.com-google-gerrit-client-change-UpdateAvailableBar_BinderImpl_GenCss_style-act
   content: '\f00d';
 }
 div.com-google-gerrit-client-change-CommitBox_BinderImpl_GenCss_style-scroll {
-  background: #e8f0f8;
+  background: #ebf8e8;
   border: 0;
   border-radius: 0 0 3px 3px;
   height: auto !important;
@@ -903,17 +858,6 @@ td.com-google-gerrit-client-diff-PatchSetSelectBox_BinderImpl_GenCss_style-iconC
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.com-google-gerrit-client-diff-PatchSetSelectBox_BinderImpl_GenCss_style-linkCell img {
-  display: none;
-}
-.com-google-gerrit-client-diff-PatchSetSelectBox_BinderImpl_GenCss_style-linkCell a:last-child:after {
-  color: #777;
-  content: '\f019';
-  display: inline-block;
-  font-family: 'FontAwesome';
-  font-size: 14px;
-  padding: 0 3px;
-}
 .com-google-gerrit-client-diff-CommentBox-Style-commentWidgets {
   background: #fff;
   border: 1px solid #eee;
@@ -1108,9 +1052,6 @@ td.fileLineINSERT .wdi {
   font-family: 'FontAwesome';
   font-size: 14px;
   padding: 0 3px;
-}
-.com-google-gerrit-client-patches-PatchSetSelectBox_BinderImpl_GenCss_style-linkPanel a:last-child img {
-  display: none;
 }
 table.sideBySideScreenLinkTable {
   overflow: hidden;

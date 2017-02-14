@@ -39,7 +39,7 @@ table.changeTable {
   .activeRow,
   &.accountDashboard .activeRow,
   &.accountDashboard.changeTable .activeRow a {
-    background: #e8f0f8 !important;
+    background: #ebf8e8 !important;
   }
 
   td {
@@ -62,13 +62,12 @@ table.changeTable {
   tbody tr:first-child {
 
     td {
-    	background: #f8f8f8 !important;
       border: 0;
-      border-bottom: 1px solid #e5e5e5 !important;
-      border-top: 1px solid #e5e5e5 !important;
-      color: #ccc;
-      padding: 12px 0;
-      text-shadow: 1px 1px #fff;
+      //border-bottom: 1px solid #e5e5e5 !important;
+      //border-top: 1px solid #e5e5e5 !important;
+      //color: #ccc;
+      padding: 6px 0;
+      //text-shadow: 1px 1px #fff;
 
       &:last-child {
         border-radius: 0 3px 0 0;
@@ -77,12 +76,6 @@ table.changeTable {
       }
 
       &.dataHeader {
-
-        &:nth-child(5) {
-          overflow: hidden;
-          text-indent: -1000px;
-          width: 20px;
-        }
 
         &:nth-child(4) {
           overflow: hidden;
@@ -204,43 +197,5 @@ td.cAPPROVAL:nth-child(12) {
 
   div.gerrit-state-plus-two:before {
     content: '\f126';
-  }
-}
-
-td.cSTATUS {
-  max-width: 0px !important;
-  overflow: hidden;
-  position: relative;
-  text-align: right;
-  text-indent: 100px;
-  text-overflow: clip;
-  width: 15px !important;
-
-  &:after {
-    background: #6cc644;
-    border-radius: 3px;
-    color: #fff;
-    content: '\f126';
-    font-family: 'FontAwesome';
-    font-size: 16px;
-    height: 16px;
-    padding: 2px;
-    position: absolute;
-    right: 2px;
-    text-indent: -100px;
-    top: 2px;
-    width: 16px;
-  }
-
-  &.gerrit-status-abandoned:after {
-  	background: #fc6d26;
-  }
-
-  &.gerrit-status-conflict:after {
-    background: #bd2c00;
-  }
-
-  &.gerrit-status-merged:after {
-    background: #6e5494;
   }
 }
