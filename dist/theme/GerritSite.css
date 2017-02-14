@@ -60,7 +60,6 @@ select option:after {
 }
 div.screen {
   margin: 0 auto;
-  width: 990px;
 }
 table.screenHeader {
   display: block !important;
@@ -147,13 +146,12 @@ div.gerrit-state-minus-two:before {
   content: '\f165';
 }
 #gerrit_topmenu {
-  background: #f5f5f5;
+  background: url('gerrit-iisg.png') no-repeat #f5f5f5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 10px 0;
+  padding: 10px 0 10px 120px;
 }
 table.topmenu {
   margin: 0 auto;
-  width: 980px;
 }
 table.topmenu td.topmenuTDglue {
   display: none;
@@ -161,9 +159,6 @@ table.topmenu td.topmenuTDglue {
 table.topmenu td.topmenuTDmenu {
   float: left;
   position: relative;
-}
-table.topmenu td.topmenuTDmenu:first-child {
-  float: right;
 }
 div.searchPanel {
   background-color: #fff;
@@ -310,7 +305,6 @@ div.suggestPopupContent table {
 /* Table Element Styles */
 table.screenHeader {
   margin: 3px auto 8px auto;
-  width: 990px;
 }
 #change_infoTable .gwt-InlineHyperlink {
   color: #333;
